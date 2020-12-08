@@ -13,8 +13,8 @@
       </b-navbar-brand>
       <b-collapse id="nav-text-collapse" is-nav>
         <b-navbar-nav>
-          <b-nav-item to="/about">About</b-nav-item>
-          <b-nav-item to="/contact">contact</b-nav-item>
+          <b-nav-item to="/works">Nos réalisations</b-nav-item>
+          <b-nav-item to="/contact">Nous contacter</b-nav-item>
         </b-navbar-nav>
       </b-collapse>
     </b-navbar>

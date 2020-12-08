@@ -17,7 +17,7 @@
 import emailjs from 'emailjs-com';
 
 export default {
-  name: "Test",
+  name: "FormContact",
   props: {
     title: String,
   },
