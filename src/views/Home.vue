@@ -70,7 +70,7 @@ export default {
         transition: all 600ms ease;
       }
     }
-    @media only screen and (max-width: 600px) {
+    @media only screen and (max-width: 720px) {
       h1 {
         font-size: 3rem;
       }

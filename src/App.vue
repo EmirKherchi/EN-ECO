@@ -73,6 +73,9 @@ body {
     width: 70%;
     margin: auto;
     border-bottom: 1px solid #285b847c;
+     @media only screen and (max-width: 720px) {
+      width: 100%;
+    }
   }
 }
 </style>
