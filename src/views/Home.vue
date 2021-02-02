@@ -21,11 +21,54 @@
       </b-jumbotron>
     </div>
     <b-container class="card_home">
-      <b-card img-src="https://placekitten.com/300/300" img-alt="Card image" img-right>
-      <b-card-text>
-        Some quick example text to build on the card and make up the bulk of the card's content.
-      </b-card-text>
-    </b-card>
+      <b-card no-body class="overflow-hidden">
+        <b-row no-gutters>
+          <b-col lg="6">
+            <b-card-body>
+              <b-card-text>
+                <h3 class="card-title">
+                  <span class="car-title_underlign">Professionnel</span> et
+                  fiable
+                </h3>
+                <p>
+                  EN ECO, spécialiste de l'isolation, vous propose de faire des
+                  économies d'énergie pour contribuer à la sauvegarde de notre
+                  planète en diminuant les gaz à effet de serre par la réduction
+                  de vos consommation énergétiques.
+                </p>
+                <p>
+                  En fonction de vos besoins et de votre budget, nos conseillers
+                  sauront vous guider vers ce qu'il a de mieux pour vous et
+                  votre habitation. Chaque maison est unique, nous travaillons
+                  avec 100% de visites techniques. Notre directeur technique
+                  répondra à toutes vos questions lors de sa venue pour une
+                  validation de la faisabilité de vos projets.
+                </p>
+                <p>
+                  Implanté sur Langrune sur mer, nous nous déplaçons sur toute
+                  la Normandie. Soucieux de conserver une relation de proximité.
+                </p>
+                <p>
+                  Nous sommes éligible RGE, ce qui garantit la qualité et la
+                  durabilité de nos matériaux et installations. De plus, nous
+                  pouvons vous faire bénéficier du crédit d'impôt et autres
+                  subventions.
+                </p>
+                <p>
+                  Contactez-nous pour une demande de visite technique gratuite.
+                </p>
+              </b-card-text>
+            </b-card-body>
+          </b-col>
+          <b-col lg="6">
+            <b-card-img
+              src="../assets/images/home_illustration.png"
+              alt="Image"
+              class="rounded-0"
+            ></b-card-img>
+          </b-col>
+        </b-row>
+      </b-card>
     </b-container>
   </div>
 </template>
@@ -76,10 +119,32 @@ export default {
       }
     }
   }
-  .card_home{
-    
+  .card_home {
     display: block;
-    margin: 200px auto ;
+    margin: 200px auto;
+    .card{
+      border-color: transparent;
+    }
+    .card-body {
+      padding: 0;
+    }
+    .card-text {
+      padding: 1rem 1rem 0 1rem;
+    }
+    h3 {
+      margin-bottom: 25px;
+      color: #285b84;
+      font-weight: 600;
+      letter-spacing: 1px;
+      span {
+        padding-bottom: 3px;
+        border-bottom: 1px solid #285b8467;
+      }
+    }
+    & > p {
+      display: block;
+      margin-top: 100px;
+    }
   }
 }
 </style>

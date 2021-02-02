@@ -25,6 +25,31 @@
     </b-container>
 
     <router-view />
+
+    <b-container fluid class="footer">
+      <b-navbar-nav class="footer-main mx-auto" style="max-width: 800px;">
+        <ul class="topnav">
+          <router-link tag="li" to="/mentions" class="footer-text_link"
+            ><a>Mentions légales</a></router-link
+          >
+          <router-link tag="li" to="/contact" class="footer-text_link"
+            ><a>Contact</a></router-link
+          >
+          <router-link tag="li" to="/mentions"
+            ><a
+              ><b-img
+                src="./assets/images/Facebook_logo.png"
+                alt="Logo entreprise isolation 1euro en eco normandie"/></a
+          ></router-link>
+          <router-link tag="li" to="/mentions"
+            ><a
+              ><b-img
+                src="./assets/images/Instagram_logo.png"
+                alt="Logo entreprise isolation 1euro en eco normandie"/></a
+          ></router-link>
+        </ul>
+      </b-navbar-nav>
+    </b-container>
   </div>
 </template>
 
@@ -33,16 +58,13 @@ body {
   background-color: #fcfcfc;
 }
 #app {
-  .header-nav{
+  .header-nav {
     background-color: #fcfcfcf6;
-    position: sticky!important;
+    position: sticky !important;
     top: 0px;
     z-index: 100000;
-    
   }
-  img {
-    max-width: 120px;
-  }
+
   #nav-text-collapse {
     a {
       margin-right: 10px;
@@ -73,21 +95,57 @@ body {
     width: 70%;
     margin: auto;
     border-bottom: 1px solid #285b847c;
-     @media only screen and (max-width: 720px) {
+    @media only screen and (max-width: 720px) {
       width: 100%;
     }
   }
-@media only screen and (max-width: 720px) {
-       .navbar-nav {
-    display: flex;
-    flex-direction: column;
-    padding-left: 0;
-    text-align: center;
-    margin-top: 50px;
-    margin-bottom: 0;
-    list-style: none;
-}
+  @media only screen and (max-width: 720px) {
+    .navbar-nav {
+      display: flex;
+      flex-direction: column;
+      padding-left: 0;
+      text-align: center;
+      margin-top: 50px;
+      margin-bottom: 0;
+      list-style: none;
     }
- 
+  }
+  .footer {
+    background-color: #111;
+    padding: 45px 0px;
+    &-text_link{
+      margin-top:5px;
+    }
+    ul.topnav {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      display: block;
+      margin: auto;
+    }
+    ul.topnav li {
+      float: left;
+    }
+    ul.topnav li a {
+      display: block;
+      color: #fbfbfd;
+      text-align: center;
+      padding: 1rem;
+      text-decoration: none;
+      letter-spacing: 1px;
+      &:hover {
+      color: #5ea669;
+        transition: all 500ms ease;
+      }
+    }
+
+    @media screen and (max-width: 600px) {
+      ul.topnav,
+      ul.topnav li {
+        float: none;
+      }
+    }
+  }
 }
 </style>
