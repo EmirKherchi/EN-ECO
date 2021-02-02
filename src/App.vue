@@ -77,5 +77,17 @@ body {
       width: 100%;
     }
   }
+@media only screen and (max-width: 720px) {
+       .navbar-nav {
+    display: flex;
+    flex-direction: column;
+    padding-left: 0;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 0;
+    list-style: none;
+}
+    }
+ 
 }
 </style>
