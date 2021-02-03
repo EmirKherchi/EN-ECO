@@ -62,13 +62,13 @@
           </b-col>
           <b-col lg="6">
             <b-card-img
-              src="../assets/images/home_illustration.png"
+              src='../assets/images/home_illustration.png'
               alt="Image"
               class="rounded-0"
             ></b-card-img>
           </b-col>
         </b-row>
-      </b-card>
+      </b-card> require('@/assets/images/Iso_combles/003.jpg')}
     </b-container>
   </div>
 </template>

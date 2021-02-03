@@ -1,19 +1,33 @@
 <template>
   <div class="Works">
-    <b-container>
-     <h1>Bro</h1>
+    <b-container fluid center>
+      <h1>Nos Réalisations</h1>
     </b-container>
+    <CarouselIsoCombles/>
+    <CarouselIsoCombles/>
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
-//import HelloWorld from '@/components/HelloWorld.vue'
+import CarouselIsoCombles from '@/components/CarouselIsoCombles.vue'
 
 export default {
   name: 'Home',
   components: {
-    //HelloWorld
-  }
+    CarouselIsoCombles,
+  },
 }
 </script>
+
+<style lang="scss" scoped>
+h1 {
+    margin: 50px 0px;
+    text-align: center;
+    color: #111;
+    font-weight: 900;
+    letter-spacing: 1px;
+    color: #285b84;
+  }
+  
+</style>
