@@ -31,7 +31,7 @@
                   fiable
                 </h3>
                 <p>
-                  EN ECO, spécialiste de l'isolation, vous propose de faire des
+                  EN ECO, <strong>spécialiste de l'isolation</strong>, vous propose de faire des
                   économies d'énergie pour contribuer à la sauvegarde de notre
                   planète en diminuant les gaz à effet de serre par la réduction
                   de vos consommation énergétiques.
@@ -39,8 +39,8 @@
                 <p>
                   En fonction de vos besoins et de votre budget, nos conseillers
                   sauront vous guider vers ce qu'il a de mieux pour vous et
-                  votre habitation. Chaque maison est unique, nous travaillons
-                  avec 100% de visites techniques. Notre directeur technique
+                  votre habitation. Chaque maison est unique, <strong>nous travaillons
+                  avec 100% de visites techniques.</strong> Notre directeur technique
                   répondra à toutes vos questions lors de sa venue pour une
                   validation de la faisabilité de vos projets.
                 </p>
@@ -49,13 +49,13 @@
                   la Normandie. Soucieux de conserver une relation de proximité.
                 </p>
                 <p>
-                  Nous sommes éligible RGE, ce qui garantit la qualité et la
+                  <strong>Nous sommes éligible RGE</strong>, ce qui garantit la qualité et la
                   durabilité de nos matériaux et installations. De plus, nous
-                  pouvons vous faire bénéficier du crédit d'impôt et autres
-                  subventions.
+                  pouvons vous faire bénéficier du <strong>crédit d'impôt et autres
+                  subventions.</strong>
                 </p>
                 <p>
-                  Contactez-nous pour une demande de visite technique gratuite.
+                  <strong>Contactez-nous pour une demande de visite technique gratuite.</strong>
                 </p>
               </b-card-text>
             </b-card-body>
