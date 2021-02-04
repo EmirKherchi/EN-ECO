@@ -68,7 +68,7 @@
             ></b-card-img>
           </b-col>
         </b-row>
-      </b-card> require('@/assets/images/Iso_combles/003.jpg')}
+      </b-card>
     </b-container>
   </div>
 </template>

@@ -1,7 +1,7 @@
 <template>
-  <b-container fluid class="Carousel-isocomble">
+  <b-container fluid class="Carousel-isounder">
     <b-container>
-      <h2><span>Isolation des</span> combles</h2>
+      <h2><span>Isolation sous</span>-sol</h2>
     </b-container>
     <b-container>
       <b-carousel
@@ -16,11 +16,11 @@
           v-bind:img-src="image.path"
         ></b-carousel-slide>
       </b-carousel>
-       <p>
-        L'isolation de vos combles est très importante pour commencer à faire
-        des économies d'énergie et garder au maximum la chaleur de votre maison.
-        En effet la déperdition thermique peut s'élever à 30 % de perte par le
-        toit
+      <p>
+        L'isolation du sous sol vous apportera un confort de vie optimal. Une
+        bonne isolation va permettre une meilleure répartition de l'air ambiant.
+        En hiver, il y a une conservation de la chaleur et de la fraîcheur en
+        été.
       </p>
     </b-container>
   </b-container>
@@ -28,14 +28,15 @@
 
 <script>
 export default {
-  name: "CarouselIsoCombles",
+  name: "CarouselIsoUnder",
   data: function() {
     return {
       images: [
-        { id: 1, path: require("@/assets/images/Iso_combles/001.jpeg") },
-        { id: 2, path: require("@/assets/images/Iso_combles/002.jpeg") },
-        { id: 3, path: require("@/assets/images/Iso_combles/003.jpeg") },
-        { id: 4, path: require("@/assets/images/Iso_combles/004.jpeg") },
+        { id: 1, path: require("@/assets/images/Iso_Under/001.jpeg") },
+        { id: 2, path: require("@/assets/images/Iso_Under/002.jpeg") },
+        { id: 3, path: require("@/assets/images/Iso_Under/003.jpeg") },
+        { id: 4, path: require("@/assets/images/Iso_Under/004.jpeg") },
+        { id: 5, path: require("@/assets/images/Iso_Under/005.jpeg") },
       ],
     };
   },
@@ -44,8 +45,8 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style lang="scss" scoped>
-.Carousel-isocomble {
-   margin: 0 0 200px 0 ;
+.Carousel-isounder {
+  margin: 0 0 200px 0;
   .carousel {
     display: block;
     margin: 100px auto;
