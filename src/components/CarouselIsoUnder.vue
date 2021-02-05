@@ -23,6 +23,7 @@
         été.
       </p>
     </b-container>
+    <hr />
   </b-container>
 </template>
 
@@ -50,9 +51,15 @@ export default {
   .carousel {
     display: block;
     margin: 100px auto;
-    width: 60%;
+    width: 70%;
+    @media only screen and (max-width: 720px) {
+      width: 90%;
+    }
     &-item {
       height: 600px;
+      @media only screen and (max-width: 720px) {
+        height: 100%;
+      }
       img {
         width: 100%;
         height: 100% !important;
@@ -62,11 +69,31 @@ export default {
   }
   h2 {
     color: #111;
+    font-weight: 900;
     letter-spacing: 1px;
     margin: 25px;
     span {
       padding-bottom: 5px;
-      border-bottom: 1px solid #285b8467;
+      border-bottom: 2px solid #285b8467;
+    }
+  }
+  p {
+    color: #111;
+    font-size: 18px;
+    width: 80%;
+    margin: auto;
+    @media only screen and (max-width: 720px) {
+      width: 100%;
+    }
+  }
+  hr {
+    margin-top: 5rem;
+    margin-bottom: 1rem;
+    border: 0;
+    border-top: 1px solid #285b8467;
+    width: 80%;
+    @media only screen and (max-width: 720px) {
+      width: 100%;
     }
   }
 }

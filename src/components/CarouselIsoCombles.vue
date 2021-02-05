@@ -16,13 +16,14 @@
           v-bind:img-src="image.path"
         ></b-carousel-slide>
       </b-carousel>
-       <p>
+      <p>
         L'isolation de vos combles est très importante pour commencer à faire
         des économies d'énergie et garder au maximum la chaleur de votre maison.
         En effet la déperdition thermique peut s'élever à 30 % de perte par le
         toit
       </p>
     </b-container>
+    <hr />
   </b-container>
 </template>
 
@@ -45,13 +46,19 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style lang="scss" scoped>
 .Carousel-isocomble {
-   margin: 0 0 200px 0 ;
+  margin: 0 0 200px 0;
   .carousel {
     display: block;
     margin: 100px auto;
-    width: 60%;
+    width: 70%;
+    @media only screen and (max-width: 720px) {
+      width: 90%;
+    }
     &-item {
       height: 600px;
+      @media only screen and (max-width: 720px) {
+        height: 100%;
+      }
       img {
         width: 100%;
         height: 100% !important;
@@ -63,9 +70,29 @@ export default {
     color: #111;
     letter-spacing: 1px;
     margin: 25px;
+    font-weight: 900;
     span {
       padding-bottom: 5px;
-      border-bottom: 1px solid #285b8467;
+      border-bottom: 2px solid #285b8467;
+    }
+  }
+  p {
+    color: #111;
+    font-size: 18px;
+    width: 80%;
+    margin: auto;
+    @media only screen and (max-width: 720px) {
+      width: 100%;
+    }
+  }
+  hr {
+    margin-top: 5rem;
+    margin-bottom: 1rem;
+    border: 0;
+    border-top: 1px solid #285b8467;
+    width: 80%;
+    @media only screen and (max-width: 720px) {
+      width: 100%;
     }
   }
 }
