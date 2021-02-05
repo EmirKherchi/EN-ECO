@@ -1,31 +1,120 @@
 <template>
-  <div class="formContact">
-    <form class="contact-form" @submit.prevent="sendEmail">
-      <label>Name</label>
-      <input type="text" name="user_name" />
-      <label>Email</label>
-      <input type="email" name="user_email" />
-      <label for="iso_comble">Isolation des combles</label>
-      <input
-        type="checkbox"
-        name="iso_comble"
-        id="iso_comble"
-        value="isolation des combles"
-      />
-      <label for="iso_sous">Isolation du sous-sol</label>
-      <input
-        type="checkbox"
-        name="iso_sous"
-        id="iso_sous"
-        value="isolation du sous sol"
-      />
-      <label>Message</label>
-      <textarea name="message"></textarea>
+  <b-container fluid class="formContact">
+    <b-container class="formContact_container-child">
+      <b-form inline class="contact-form" @submit.prevent="sendEmail">
+        <b-form-row>
+          <b-form-group id="input-firstname" label-for="input-firstname">
+            <b-form-input
+              id="input-firstname"
+              type="text"
+              name="user_firstname"
+              placeholder="Prénom"
+              required
+          /></b-form-group>
 
-      <input type="submit" value="Send" />
-      
-    </form>
-  </div>
+          <b-form-group id="input-name" label-for="input-name">
+            <b-form-input
+              type="text"
+              name="user_name"
+              placeholder="Nom"
+              required
+          /></b-form-group>
+
+          <b-input-group
+            id="input-email"
+            label="Email:"
+            label-for="input-email"
+            prepend="@"
+          >
+            <b-form-input
+              type="email"
+              name="user_email"
+              placeholder="E-mail"
+              required
+          /></b-input-group>
+        </b-form-row>
+
+        <b-form-row>
+          <b-form-group id="input-phone" label-for="input-phone">
+            <b-form-input
+              id="input-phone"
+              type="tel"
+              name="user_phone"
+              placeholder="Téléphone"
+              required
+          /></b-form-group>
+
+          <b-form-group id="input-city" label-for="input-city">
+            <b-form-input
+              type="text"
+              name="user_city"
+              placeholder="Ville"
+              required
+          /></b-form-group>
+
+          <b-form-group id="input-postCode" label-for="input-postCode">
+            <b-form-input
+              type="text"
+              name="user_postCode"
+              placeholder="Code postal"
+              required
+          /></b-form-group>
+        </b-form-row>
+
+        <b-form-row>
+          <b-form-col>
+            <h6>Travaux à effectuer :</h6>
+            <b-form-checkbox
+              type="checkbox"
+              name="iso_comble"
+              id="iso_comble"
+              value="Isolation des combles"
+              >Isolation des combles</b-form-checkbox
+            >
+
+            <b-form-checkbox
+              type="checkbox"
+              name="iso_sous"
+              id="iso_sous"
+              value="Isolation du sous sol"
+            >
+              Isolation du sous-sol</b-form-checkbox
+            >
+            <b-form-checkbox
+              type="checkbox"
+              name="iso_vide"
+              id="iso_vide"
+              value="Isolation vide sanitaire"
+            >
+              Isolation du sous-sol</b-form-checkbox
+            >
+            <b-form-checkbox
+              type="checkbox"
+              name="iso_ext"
+              id="iso_ext"
+              value="Isolation éxtérieur"
+              >Isolation extérieur</b-form-checkbox
+            >
+          </b-form-col>
+
+          <b-form-col>
+            <h6>Message:</h6>
+            <b-form-textarea
+              name="message"
+              placeholder="Descriptions de votre projet ...."
+              rows="6"
+              max-rows="6"
+            >
+            </b-form-textarea>
+          </b-form-col>
+        </b-form-row>
+
+        <b-container>
+          <b-button type="submit" value="Send">Envoyer</b-button>
+        </b-container>
+      </b-form>
+    </b-container>
+  </b-container>
 </template>
 
 <script>
@@ -66,17 +155,53 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style lang="scss" scoped>
 .formContact {
-  text-align: center;
-  input {
+  background-color: #fff;
+  padding: 50px 0 100px 0px;
+  .form-inline {
     display: block;
-    margin: auto;
-    &[type="submit"] {
-      margin-top: 50px;
+    margin-left: 15%;
+  }
+  .form-group {
+    margin-right: 50px;
+  }
+  .form-row {
+    margin-bottom: 100px;
+  }
+  .input-group > .custom-file,
+  .input-group > .custom-select,
+  .input-group > .form-control,
+  .input-group > .form-control-plaintext {
+    max-width: 189px;
+  }
+  b-form-col {
+    margin-right: 150px;
+    .custom-control {
+      margin-bottom: 15px;
+    }
+    h6 {
+      margin-bottom: 20px;
+      font-weight: 600;
+    }
+    textarea {
+      width: 200%;
     }
   }
-  textarea {
+  button {
     display: block;
-    margin: auto;
+    margin-left: 37%;
+    text-align: center;
+    color: #fff;
+    background-color: #5ea669;
+    border: 1px solid #5ea669;
+
+    &:hover {
+      background-color: transparent;
+      border-color: #111;
+      color: #111;
+      transition: all 600ms ease;
+    }
   }
+  
+
 }
 </style>
