@@ -166,12 +166,25 @@ export default {
   }
   .form-row {
     margin-bottom: 100px;
+    @media only screen and (max-width: 720px) {
+      
+      display: block;
+      margin: 15px auto;
+    }
+
   }
   .input-group > .custom-file,
   .input-group > .custom-select,
   .input-group > .form-control,
   .input-group > .form-control-plaintext {
+    
     max-width: 189px;
+    @media only screen and (max-width: 720px) {
+      max-width: 245px;
+    }
+     @media only screen and (max-width: 375px) {
+      max-width: 201px;
+    }
   }
   b-form-col {
     margin-right: 150px;
@@ -181,8 +194,14 @@ export default {
     h6 {
       margin-bottom: 20px;
       font-weight: 600;
+      @media only screen and (max-width: 720px) {
+     margin-top: 25px;
+    }
     }
     textarea {
+      @media only screen and (max-width: 720px) {
+      max-width: 240px;
+    }
       width: 200%;
     }
   }
@@ -193,6 +212,9 @@ export default {
     color: #fff;
     background-color: #5ea669;
     border: 1px solid #5ea669;
+    @media only screen and (max-width: 720px) {
+      margin-left: 25%;
+    }
 
     &:hover {
       background-color: transparent;
