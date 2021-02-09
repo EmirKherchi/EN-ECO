@@ -72,9 +72,15 @@ export default {
     font-weight: 900;
     letter-spacing: 1px;
     margin: 25px;
+    @media only screen and (max-width: 720px) {
+      text-align: center;
+    }
     span {
       padding-bottom: 5px;
       border-bottom: 2px solid #285b8467;
+      @media only screen and (max-width: 720px) {
+      border: none;
+    }
     }
   }
   p {

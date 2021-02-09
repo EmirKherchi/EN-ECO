@@ -129,7 +129,9 @@ export default {
       padding: 0;
     }
     .card-text {
-      padding: 1rem 1rem 0 1rem;
+      margin-top: 30px;
+      font-size: 15px;
+      width: 90%;
     }
     h3 {
       margin-bottom: 25px;

@@ -5,6 +5,7 @@
     </b-container>
     
       <FormContact/>
+      <CardContact/>
     
   </div>
 </template>
@@ -12,11 +13,13 @@
 <script>
 // @ is an alias to /src
 import FormContact from '@/components/FormContact.vue'
+import CardContact from '@/components/CardContact.vue'
 
 export default {
   name: 'Home',
   components: {
-    FormContact
+    FormContact,
+    CardContact
   }
 }
 </script>

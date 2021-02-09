@@ -1,6 +1,6 @@
 <template>
   <b-container fluid class="formContact">
-    <b-container class="formContact_container-child">
+    <b-container class="formContact_container-child" v-if="status == ''">
       <b-form inline class="contact-form" @submit.prevent="sendEmail">
         <b-form-row>
           <b-form-group id="input-firstname" label-for="input-firstname">
@@ -101,7 +101,7 @@
             <h6>Message:</h6>
             <b-form-textarea
               name="message"
-              placeholder="Descriptions de votre projet ...."
+              placeholder="Description de votre projet ...."
               rows="6"
               max-rows="6"
             >
@@ -114,11 +114,28 @@
         </b-container>
       </b-form>
     </b-container>
+    <h2
+      class="xyz-in"
+      xyz="fade down-100% back-5 ease-in-out"
+      v-if="status === 'ok'"
+    >
+      Merci votre message est envoyé, nous vous contacterons dans les plus brefs
+      délais.
+    </h2>
+    <h3
+      class="xyz-in"
+      xyz="fade down-100% back-5 ease-in-out"
+      v-if="status === 'nope'"
+    >
+      Une erreur est survenue, veuillez recommencer
+    </h3>
+   
   </b-container>
 </template>
 
 <script>
 import emailjs from "emailjs-com";
+import "@animxyz/core";
 
 export default {
   name: "FormContact",
@@ -127,11 +144,11 @@ export default {
   },
   data: function() {
     return {
-      isocomble: false,
+      status: "",
     };
   },
   methods: {
-    sendEmail: (e) => {
+    sendEmail: function(e) {
       emailjs
         .sendForm(
           "service_d7yzkun",
@@ -142,9 +159,12 @@ export default {
         .then(
           (result) => {
             console.log("SUCCESS!", result.status, result.text);
+            this.status = "ok";
+            status();
           },
           (error) => {
             console.log("FAILED...", error);
+            this.status = "nope";
           }
         );
     },
@@ -167,22 +187,19 @@ export default {
   .form-row {
     margin-bottom: 100px;
     @media only screen and (max-width: 720px) {
-      
       display: block;
       margin: 15px auto;
     }
-
   }
   .input-group > .custom-file,
   .input-group > .custom-select,
   .input-group > .form-control,
   .input-group > .form-control-plaintext {
-    
     max-width: 189px;
     @media only screen and (max-width: 720px) {
       max-width: 245px;
     }
-     @media only screen and (max-width: 375px) {
+    @media only screen and (max-width: 375px) {
       max-width: 201px;
     }
   }
@@ -195,13 +212,13 @@ export default {
       margin-bottom: 20px;
       font-weight: 600;
       @media only screen and (max-width: 720px) {
-     margin-top: 25px;
-    }
+        margin-top: 25px;
+      }
     }
     textarea {
       @media only screen and (max-width: 720px) {
-      max-width: 240px;
-    }
+        max-width: 240px;
+      }
       width: 200%;
     }
   }
@@ -223,7 +240,13 @@ export default {
       transition: all 600ms ease;
     }
   }
-  
-
+  h2,
+  h3 {
+    text-align: center;
+    color: #5ea669;
+    padding-top: 50px;
+     margin-bottom: 500px;
+  }
+ 
 }
 </style>
