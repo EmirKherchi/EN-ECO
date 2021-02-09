@@ -121,6 +121,8 @@
     >
       Merci votre message est envoyé, nous vous contacterons dans les plus brefs
       délais.
+      <br />
+      <b-icon class="rotate-center" icon="check2-circle"></b-icon>
     </h2>
     <h3
       class="xyz-in"
@@ -129,7 +131,6 @@
     >
       Une erreur est survenue, veuillez recommencer
     </h3>
-   
   </b-container>
 </template>
 
@@ -177,10 +178,43 @@ export default {
 .formContact {
   background-color: #fff;
   padding: 50px 0 100px 0px;
-   @media screen and (max-width: 600px) {
-      padding: 50px 0 50px 0px;
-      
+  @media screen and (max-width: 600px) {
+    padding: 50px 0 50px 0px;
+  }
+  @-webkit-keyframes rotate-center {
+    0% {
+      -webkit-transform: rotate(180deg);
+      transform: rotate(180deg);
+      opacity: 0;
     }
+    100% {
+      -webkit-transform: rotate(360deg);
+      transform: rotate(360deg);
+      opacity: 1;
+    }
+  }
+  @keyframes rotate-center {
+    0% {
+      -webkit-transform: rotate(180deg);
+      transform: rotate(180deg);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: rotate(360deg);
+      transform: rotate(360deg);
+      opacity: 1;
+    }
+  }
+
+  .rotate-center {
+    -webkit-animation: rotate-center 1.5s linear both;
+    animation: rotate-center 1.5s linear both;
+  }
+  svg {
+    display: block;
+    margin: 100px auto;
+    font-size: 100px;
+  }
   .form-inline {
     display: block;
     margin-left: 15%;
@@ -249,8 +283,7 @@ export default {
     text-align: center;
     color: #5ea669;
     padding-top: 50px;
-     margin-bottom: 500px;
+    margin-bottom: 500px;
   }
- 
 }
 </style>
