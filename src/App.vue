@@ -39,13 +39,13 @@
             ><a
               ><b-img
                 src="./assets/images/Facebook_logo.png"
-                alt="Logo entreprise isolation 1euro en eco normandie"/></a
+                alt="Facebook entreprise isolation 1euro en eco normandie"/></a
           ></router-link>
           <router-link tag="li" to="/mentions"
             ><a
               ><b-img
                 src="./assets/images/Instagram_logo.png"
-                alt="Logo entreprise isolation 1euro en eco normandie"/></a
+                alt="Instagram entreprise isolation 1euro en eco normandie"/></a
           ></router-link>
         </ul>
       </b-navbar-nav>

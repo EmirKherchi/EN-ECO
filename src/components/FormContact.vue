@@ -177,6 +177,10 @@ export default {
 .formContact {
   background-color: #fff;
   padding: 50px 0 100px 0px;
+   @media screen and (max-width: 600px) {
+      padding: 50px 0 50px 0px;
+      
+    }
   .form-inline {
     display: block;
     margin-left: 15%;
