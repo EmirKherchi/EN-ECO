@@ -29,6 +29,16 @@
     <b-container fluid class="footer">
       <b-navbar-nav class="footer-main mx-auto" style="max-width: 800px;">
         <ul class="topnav">
+          <li>
+            <b-img
+              class="logoRge"
+              src="./assets/images/logoRge.png"
+              alt="Facebook entreprise isolation 1euro en eco normandie"
+            />
+            <br />
+            <p class="logoRge_text">E-E 184 925</p>
+          </li>
+
           <router-link tag="li" to="/mentions" class="footer-text_link"
             ><a>Mentions légales</a></router-link
           >
@@ -58,6 +68,17 @@ body {
   background-color: #fcfcfc;
 }
 #app {
+  .logoRge {
+   display: block;
+    margin: 10px auto;
+    margin-bottom: 0;
+    width: 32px;
+    &_text {
+      color: #fcfcfc;
+      font-size: 10px;
+      letter-spacing: 1px;
+    }
+  }
   .header-nav {
     background-color: #fcfcfcf6;
     position: sticky !important;
@@ -113,8 +134,8 @@ body {
   .footer {
     background-color: #111;
     padding: 45px 0px;
-    &-text_link{
-      margin-top:5px;
+    &-text_link {
+      margin-top: 5px;
     }
     ul.topnav {
       list-style-type: none;
@@ -135,7 +156,7 @@ body {
       text-decoration: none;
       letter-spacing: 1px;
       &:hover {
-      color: #5ea669;
+        color: #5ea669;
         transition: all 500ms ease;
       }
     }

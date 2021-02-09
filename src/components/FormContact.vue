@@ -283,7 +283,7 @@ export default {
     text-align: center;
     color: #5ea669;
     padding-top: 50px;
-    margin-bottom: 500px;
+    margin-bottom: 100px;
   }
 }
 </style>

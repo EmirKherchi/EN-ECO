@@ -16,17 +16,16 @@
                 <b-col lg="6">
                   <b-list-group>
                     <b-list-group-item>
-                      <b-icon icon="telephone-fill"></b-icon><a href="tel:+33500000000">
-                      06021144485</a></b-list-group-item
+                      <b-icon icon="telephone-fill"></b-icon><a href="tel:+33626566643">
+                     06 26 56 66 43</a></b-list-group-item
                     >
                     <b-list-group-item>
-                      <b-icon icon="envelope"></b-icon><a href="mailto:contact@example.com">
-                      email@email.fr</a></b-list-group-item
+                      <b-icon icon="envelope"></b-icon><a href="mailto:sas.en.eco@gmail.com">
+                      sas.en.eco@gmail.com</a></b-list-group-item
                     >
                     <b-list-group-item
-                      ><b-icon icon="geo-alt-fill"></b-icon> adresse<br />127
-                      rue de l'adresse <br />
-                      14000 adresse</b-list-group-item
+                      ><b-icon icon="geo-alt-fill"></b-icon> EN ECO<br />12 Rue de Luc<br />
+                      14830 Langrune-sur-Mer</b-list-group-item
                     >
                   </b-list-group>
                 </b-col>
@@ -66,7 +65,6 @@
 </template>
 
 <script>
-import "@animxyz/core";
 
 export default {
   name: "CardContact",
@@ -86,7 +84,7 @@ export default {
     margin-right: 5px;
     margin-left: -25px;
     color: #000;
-     @media screen and (max-width: 600px) {
+     @media screen and (max-width: 991px) {
       margin-left: -15px;
       
     }
@@ -106,7 +104,7 @@ export default {
     border: none;
     margin-bottom: 20%;
     color: #68717a;
-    @media screen and (max-width: 600px) {
+    @media screen and (max-width: 991px) {
      text-align: center;
       margin-bottom: 5%;
        padding-left: 0px;
@@ -114,7 +112,7 @@ export default {
   }
   .card-img {
     width: 90%;
-    @media screen and (max-width: 600px) {
+    @media screen and (max-width: 991px) {
      width: 100%;
     }
   }
