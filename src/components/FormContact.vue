@@ -62,7 +62,7 @@
         </b-form-row>
 
         <b-form-row>
-          <b-form-col>
+          <b-col>
             <h6>Travaux à effectuer :</h6>
             <b-form-checkbox
               type="checkbox"
@@ -86,7 +86,7 @@
               id="iso_vide"
               value="Isolation vide sanitaire"
             >
-              Isolation du sous-sol</b-form-checkbox
+              Isolation du vide sanitaire</b-form-checkbox
             >
             <b-form-checkbox
               type="checkbox"
@@ -95,9 +95,10 @@
               value="Isolation éxtérieur"
               >Isolation extérieur</b-form-checkbox
             >
-          </b-form-col>
+            
+          </b-col>
 
-          <b-form-col>
+          <b-col>
             <h6>Message:</h6>
             <b-form-textarea
               name="message"
@@ -106,7 +107,7 @@
               max-rows="6"
             >
             </b-form-textarea>
-          </b-form-col>
+          </b-col>
         </b-form-row>
 
         <b-container>
@@ -218,6 +219,15 @@ export default {
   .form-inline {
     display: block;
     margin-left: 15%;
+    
+      label{
+        @media (min-width: 576px){
+        align-content: left;
+        text-align: left;
+        border: 1px solid black;
+      }
+    }
+    
   }
   .form-group {
     margin-right: 50px;
@@ -241,11 +251,13 @@ export default {
       max-width: 201px;
     }
   }
-  b-form-col {
+  .col {
     margin-right: 150px;
     .custom-control {
       margin-bottom: 15px;
+      
     }
+
     h6 {
       margin-bottom: 20px;
       font-weight: 600;
@@ -257,8 +269,12 @@ export default {
       @media only screen and (max-width: 720px) {
         max-width: 240px;
       }
-      width: 200%;
+      width: 100%;
+     
     }
+     label{
+        justify-content: left;
+      }
   }
   button {
     display: block;
@@ -286,4 +302,5 @@ export default {
     margin-bottom: 100px;
   }
 }
+
 </style>

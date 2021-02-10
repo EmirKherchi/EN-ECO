@@ -68,9 +68,7 @@
 
 export default {
   name: "CardContact",
-
-  data: function() {},
-};
+}
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
