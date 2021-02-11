@@ -11,6 +11,7 @@
         header="EN ECO NORMANDIE ISOLATION"
         lead="Société Délégatrice des CEE à 1 Euro"
       >
+     
         <b-button
           class="xyz-in"
           xyz="fade-100% duration-15 ease-in-out delay-3 down-5"
@@ -78,6 +79,18 @@
 import "@animxyz/core";
 export default {
   name: "Home",
+  metaInfo: {
+      name: 'En Eco En normandie  Accueil',
+      title: 'Accueil',
+      titleTemplate: '%s | EN ECO En Normandie',
+      meta: [
+                { name: 'description', content:  "En eco en normandie vous propose ses services certifiés RGE pour isoler vos maisons par l'extérieur ou depuis vos sous-sol et combles"},
+                { property: 'og:title', content: "En Eco En Normandie - Votre entreprise d'isolation à un euro certifiée RGE en Normandie"},
+                { property: 'og:site_name', content: 'En Eco En Normandie'},
+                {property: 'og:type', content: 'website'},
+                 {property: 'og:image', content: '../assets/images/home_jumbotron.png'},
+            ]
+    }
 };
 </script>
 

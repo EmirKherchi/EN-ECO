@@ -14,6 +14,7 @@
           v-for="image in images"
           v-bind:key="image.id"
           v-bind:img-src="image.path"
+           v-bind:img-alt="image.alt"
         ></b-carousel-slide>
       </b-carousel>
       <p>
@@ -33,11 +34,11 @@ export default {
   data: function() {
     return {
       images: [
-        { id: 1, path: require("@/assets/images/Iso_Under/001.jpeg") },
-        { id: 2, path: require("@/assets/images/Iso_Under/002.jpeg") },
-        { id: 3, path: require("@/assets/images/Iso_Under/003.jpeg") },
-        { id: 4, path: require("@/assets/images/Iso_Under/004.jpeg") },
-        { id: 5, path: require("@/assets/images/Iso_Under/005.jpeg") },
+        { id: 1, path: require("@/assets/images/Iso_Under/001.jpeg"), alt: "Images isolations Sous-sol EN Eco en Normandie, Isolation à 1 euro RGE" },
+        { id: 2, path: require("@/assets/images/Iso_Under/002.jpeg"),alt: "Images isolations Sous-sol EN Eco en Normandie, Isolation à 1 euro RGE" }, 
+        { id: 3, path: require("@/assets/images/Iso_Under/003.jpeg"),alt: "Images isolations Sous-sol EN Eco en Normandie, Isolation à 1 euro RGE" }, 
+        { id: 4, path: require("@/assets/images/Iso_Under/004.jpeg"),alt: "Images isolations Sous-sol EN Eco en Normandie, Isolation à 1 euro RGE" },
+        { id: 5, path: require("@/assets/images/Iso_Under/005.jpeg"), alt: "Images isolations Sous-sol EN Eco en Normandie, Isolation à 1 euro RGE" }, 
       ],
     };
   },

@@ -280,6 +280,13 @@ export default {
       name: 'En Eco Mentions',
       title: 'Mentions légales',
       titleTemplate: '%s | EN ECO En Normandie',
+      meta: [
+                { name: 'description', content:  "Mentions légales entreprise isolations habitations, en eco en normandie vous propose ses services certifiés RGE pour isoler vos maisons par l'extérieur ou depuis vos sous-sol et combles"},
+                { property: 'og:title', content: "En Eco En Normandie - Mentions légales entreprise isolations habitations, en eco en normandie"},
+                { property: 'og:site_name', content: 'En Eco En Normandie'},
+                {property: 'og:type', content: 'website'},
+                 {property: 'og:image', content: '../assets/images/home_jumbotron.png'},
+            ]
     }
 };
 </script>
