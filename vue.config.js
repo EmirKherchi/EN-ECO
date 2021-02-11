@@ -20,5 +20,20 @@ module.exports = {
 
         return options
       })
+  },
+
+  pluginOptions: {
+    prerenderSpa: {
+      registry: undefined,
+      renderRoutes: [
+        '/',
+        '/works',
+        '/contact',
+        '/mentions'
+      ],
+      useRenderEvent: true,
+      headless: true,
+      onlyProduction: true
+    }
   }
 }
