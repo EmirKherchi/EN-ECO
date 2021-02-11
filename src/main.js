@@ -5,9 +5,11 @@ import './plugins/bootstrap-vue'
 import App from './App.vue'
 import router from './router'
 import { BootstrapVue, IconsPlugin } from 'bootstrap-vue'
+import Meta from'vue-meta'
 
 Vue.use(BootstrapVue)
 Vue.use(IconsPlugin)
+Vue.use(Meta)
 
 Vue.config.productionTip = false
 

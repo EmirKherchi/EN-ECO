@@ -20,7 +20,12 @@ export default {
   components: {
     FormContact,
     CardContact
-  }
+  },
+  metaInfo: {
+      name: 'En Eco Contact',
+      title: 'Contact',
+      titleTemplate: '%s | EN ECO En Normandie',
+    }
 }
 </script>
 

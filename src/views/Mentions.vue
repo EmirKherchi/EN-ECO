@@ -276,7 +276,11 @@
 
 export default {
   name: "Home",
-  components: {},
+ metaInfo: {
+      name: 'En Eco Mentions',
+      title: 'Mentions légales',
+      titleTemplate: '%s | EN ECO En Normandie',
+    }
 };
 </script>
 

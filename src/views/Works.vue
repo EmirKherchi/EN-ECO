@@ -19,6 +19,18 @@ export default {
     CarouselIsoCombles,
     CarouselIsoUnder
   },
+  metaInfo: {
+      name: 'En Eco Nos réalisations',
+      title: 'Nos réalisations',
+      titleTemplate: '%s | EN ECO En Normandie',
+      meta: [
+                { name: 'description', content:  "Découvrez nos réalisations en eco en enormandie d'isolation à un euro en normandie, en eco en normandie vous propose ses services certifiés RGE pour isoler vos maisons par l'extérieur ou depuis vos sous-sol et combles"},
+                { property: 'og:title', content: "En Eco En Normandie - Découvrez nos réalisations d'isolations d'habitations en Normandie"},
+                { property: 'og:site_name', content: 'En Eco En Normandie'},
+                {property: 'og:type', content: 'website'},    
+                {name: 'robots', content: 'index,follow'} 
+            ]
+    }
 }
 </script>
 

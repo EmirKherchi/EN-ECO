@@ -63,6 +63,18 @@
   </div>
 </template>
 
+<script>
+  export default {
+    name: 'En Eco App',
+    metaInfo: {
+      // if no subcomponents specify a metaInfo.title, this title will be used
+      title: 'EN ECO En normandie',
+      // all titles will be injected into this template
+      titleTemplate: '%s | EN ECO En normandie'
+    }
+  }
+</script>
+
 <style lang="scss">
 body {
   background-color: #fcfcfc;
