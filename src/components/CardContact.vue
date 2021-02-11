@@ -108,11 +108,6 @@ export default {
        padding-left: 0px;
     }
   }
-  .card-img {
-    width: 90%;
-    @media screen and (max-width: 991px) {
-     width: 100%;
-    }
-  }
+  
 }
 </style>
