@@ -162,7 +162,6 @@ export default {
           (result) => {
             console.log("SUCCESS!", result.status, result.text);
             this.status = "ok";
-            status();
           },
           (error) => {
             console.log("FAILED...", error);
