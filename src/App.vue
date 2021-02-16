@@ -45,18 +45,16 @@
           <router-link tag="li" to="/contact" class="footer-text_link"
             ><a>Contact</a></router-link
           >
-          <router-link tag="li" to="/mentions"
-            ><a
+          <li><a :href='"https://www.facebook.com/isolationlangrune14"' target="_blank"
               ><b-img
                 src="./assets/images/Facebook_logo.png"
                 alt="Facebook entreprise isolation 1euro en eco normandie"/></a
-          ></router-link>
-          <router-link tag="li" to="/mentions"
-            ><a
+          ></li>
+          <li><a :href='"https://www.instagram.com/en_eco_normandie/"' target="_blank"
               ><b-img
                 src="./assets/images/Instagram_logo.png"
                 alt="Instagram entreprise isolation 1euro en eco normandie"/></a
-          ></router-link>
+          ></li>
         </ul>
       </b-navbar-nav>
     </b-container>
