@@ -16,8 +16,8 @@
                 <b-col lg="6">
                   <b-list-group>
                     <b-list-group-item>
-                      <b-icon icon="telephone-fill"></b-icon><a href="tel:+33626566643">
-                     06 26 56 66 43</a></b-list-group-item
+                      <b-icon icon="telephone-fill"></b-icon><a href="tel:+33642242283">
+                     06 42 24 22 83</a></b-list-group-item
                     >
                     <b-list-group-item>
                       <b-icon icon="envelope"></b-icon><a href="mailto:sas.en.eco@gmail.com">

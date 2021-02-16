@@ -153,10 +153,10 @@ export default {
     sendEmail: function(e) {
       emailjs
         .sendForm(
-          "service_d7yzkun",
-          "template_suls7od",
+          "EnEco",
+          "template_dh9u4a4",
           e.target,
-          "user_DjSPAKIEOISYGSAvrYotn"
+          "user_VIewQaRCMyUGU4uNLoLgm"
         )
         .then(
           (result) => {
