@@ -16,15 +16,20 @@
                 <b-col lg="6">
                   <b-list-group>
                     <b-list-group-item>
-                      <b-icon icon="telephone-fill"></b-icon><a href="tel:+33642242283">
-                     06 42 24 22 83</a></b-list-group-item
+                      <b-icon icon="telephone-fill"></b-icon
+                      ><a href="tel:+33642242283">
+                        06 42 24 22 83</a
+                      ></b-list-group-item
                     >
                     <b-list-group-item>
-                      <b-icon icon="envelope"></b-icon><a href="mailto:sas.en.eco@gmail.com">
-                      sas.en.eco@gmail.com</a></b-list-group-item
+                      <b-icon icon="envelope"></b-icon
+                      ><a href="mailto:sas.en.eco@gmail.com">
+                        sas.en.eco@gmail.com</a
+                      ></b-list-group-item
                     >
                     <b-list-group-item
-                      ><b-icon icon="geo-alt-fill"></b-icon> EN ECO<br />12 Rue de Luc<br />
+                      ><b-icon icon="geo-alt-fill"></b-icon> EN ECO<br />12 Rue
+                      de Luc<br />
                       14830 Langrune-sur-Mer</b-list-group-item
                     >
                   </b-list-group>
@@ -32,27 +37,28 @@
                 <b-col lg="6">
                   <b-list-group>
                     <b-list-group-item>
-                      <router-link tag="li" to="/mentions"
-                        ><a
-                          ><b-img
-                            src="../assets/images/Instagram_logo.png"
-                            alt="Instagram entreprise isolation 1euro en eco normandie"
-                          /> Instagram</a
-                        ></router-link
-                      ></b-list-group-item>
+                      <a :href='"https://www.instagram.com/en_eco_normandie/"' target="_blank"
+                        ><b-img
+                          src="../assets/images/Instagram_logo.png"
+                          alt="Instagram entreprise isolation 1euro en eco normandie"
+                        />
+                        Instagram</a
+                      ></b-list-group-item
+                    >
                     <b-list-group-item>
-                      <router-link tag="li" to="/mentions"
-                        ><a
-                          ><b-img
-                            src="../assets/images/Facebook_logo.png"
-                            alt="Facebook entreprise isolation 1euro en eco normandie"
-                          /> Facebook</a
-                        ></router-link
-                      ></b-list-group-item>
-                    <b-list-group-item><b-img
-                            src="../assets/images/logo.png"
-                            alt="Logo entreprise isolation 1euro en eco normandie"
-                          /></b-list-group-item>
+                      <a :href='"https://www.facebook.com/isolationlangrune14"' target="_blank"
+                        ><b-img
+                          src="../assets/images/Facebook_logo.png"
+                          alt="Facebook entreprise isolation 1euro en eco normandie"
+                        />
+                        Facebook</a
+                      ></b-list-group-item
+                    >
+                    <b-list-group-item
+                      ><b-img
+                        src="../assets/images/logo.png"
+                        alt="Logo entreprise isolation 1euro en eco normandie"
+                    /></b-list-group-item>
                   </b-list-group>
                 </b-col>
               </b-row>
@@ -65,31 +71,28 @@
 </template>
 
 <script>
-
 export default {
   name: "CardContact",
-}
+};
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style lang="scss" scoped>
 .card_contact {
-  li{
+  li {
     list-style: none;
-    
   }
-  svg{
+  svg {
     margin-right: 5px;
     margin-left: -25px;
     color: #000;
-     @media screen and (max-width: 991px) {
+    @media screen and (max-width: 991px) {
       margin-left: -15px;
-      
     }
   }
-  a{
+  a {
     color: #68717a;
-    &:hover{
+    &:hover {
       text-decoration: none;
       color: #5ea669 !important;
       transition: all 300ms ease-out;
@@ -103,11 +106,10 @@ export default {
     margin-bottom: 20%;
     color: #68717a;
     @media screen and (max-width: 991px) {
-     text-align: center;
+      text-align: center;
       margin-bottom: 5%;
-       padding-left: 0px;
+      padding-left: 0px;
     }
   }
-  
 }
 </style>

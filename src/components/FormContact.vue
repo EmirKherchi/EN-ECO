@@ -76,24 +76,31 @@
               type="checkbox"
               name="iso_sous"
               id="iso_sous"
-              value="Isolation du sous sol"
+              value="Isolation du sous sol / Vide sanitaire"
             >
-              Isolation du sous-sol</b-form-checkbox
+              Isolation du sous-sol / Vide sanitaire</b-form-checkbox
             >
             <b-form-checkbox
               type="checkbox"
-              name="iso_vide"
-              id="iso_vide"
-              value="Isolation vide sanitaire"
+              name="iso_murs"
+              id="iso_murs"
+              value="Isolation murs intérieurs"
             >
-              Isolation du vide sanitaire</b-form-checkbox
+              Isolation des murs intérieurs</b-form-checkbox
             >
             <b-form-checkbox
               type="checkbox"
               name="iso_ext"
               id="iso_ext"
               value="Isolation éxtérieur"
-              >Isolation extérieur</b-form-checkbox
+              >Isolation des murs extérieurs</b-form-checkbox
+            >
+            <b-form-checkbox
+              type="checkbox"
+              name="pac"
+              id="pac"
+              value="Pompe à chaleur"
+              >Pompe à chaleur</b-form-checkbox
             >
             
           </b-col>
